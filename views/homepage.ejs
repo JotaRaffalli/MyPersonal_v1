@@ -1,74 +1,493 @@
-<!-- Default home page -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
-<style>
-  /* Styles included inline since you'll probably be deleting this page anyway */
-  html,body{text-align:left;font-size:1em}html,body,img,form,textarea,input,fieldset,div,p,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code{margin:0;padding:0}ul,li{list-style:none}img{display:block}a img{border:0}a{text-decoration:none;font-weight:normal;font-family:inherit}*:active,*:focus{outline:0;-moz-outline-style:none}h1,h2,h3,h4,h5,h6{font-weight:normal}div.clear{clear:both}.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}body{font-family:"Open Sans",Arial,sans-serif;font-weight:300;}.top-bar {width: 100%; background-color: #e4f0f1; padding: 15px 0;}.top-bar .container img {float: left;}.top-bar .container ul {float: right; padding-top: 25px;}.top-bar .container li {float: left; width: 125px; text-align: center; font-size: 15px; color:#000; font-weight: 600;}.top-bar .container a li:hover {color: #118798; -webkit-transition:color 200ms; -moz-transition:color 200ms; -o-transition:color 200ms;transition:color 200ms;}.container{width: 80%; max-width: 1200px; margin: auto;}div.header {-webkit-transition: 6s; -moz-transition: 6s; -o-transition: 6s;transition: 6s; background: rgba(4, 36, 41, 0.89) url(http://sailsjs.org/images/img_sailsShadow.png) no-repeat 42% bottom; padding: 100px 0 65px;}.header h1#main-title{color: #fff; font-weight: 300; font-size: 2.5em;}.header h3{color: #b1eef7; font-style: italic; font-weight: 300;}.header h3 code{font-style: normal!important; background-color: rgba(255,255,255,0.5); font-weight: 300; color:#0e6471; margin: 0px 5px;}div.main.container{padding: 50px 0;}h1 {color: #118798; font-weight: 300;}code {font-size: inherit; font-family: 'Consolas', 'Monaco', monospace; padding:4px 5px 1px; background-color: #f3f5f7}a{color: #118798; font-weight: 300; text-decoration: underline;}a:hover {color: #0e6471; -webkit-transition:color 200ms; -moz-transition:color 200ms; -o-transition:color 200ms;transition:color 200ms;}p{line-height: 1.5em;}blockquote{background-color: #e4f0f1; padding: 25px; line-height: 1.5em; margin: 15px 0;}blockquote span{font-weight: 600; padding-right: 5px;}ul.getting-started{padding: 25px 75px 25px 0; width: 70%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}ul.getting-started li{padding: 25px 0;}ul.getting-started li h3 {padding-bottom: 10px; font-size: 25px; font-weight: 300;}.sprite{background:url(http://sailsjs.org/images/newapp.sprite.png) no-repeat; position: absolute; left: 0; top:0;}.getting-started .sprite{margin-left:10px;padding-left:60px;height:42px;width:0; float: left;}.getting-started .one{background-position:0 0}.getting-started .two{background-position:0 -42px}.getting-started .three{background-position:0 -83px}div.step {position: relative; padding-left: 70px; opacity: 0.9;}div.step:hover{ opacity: 1;}div.links {float: left; width: 30%; max-width: 325px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f3f5f7; border: 1px solid #ebebeb; padding: 25px 45px 35px;}div.links h3 {color: #727272; text-align: center; font-size: 28px; font-weight: 300;}div.links h4 {color: #727272; font-size: 17px; font-weight: 600; padding: 15px 0 10px;}div.links .link-list a {text-decoration: none; font-weight: 400;}div.links .link-list a li {padding: 0px 0px 5px 10px;}div.default-page{min-width: 1200px;}.pocket{display:none;}
-</style>
-<script type="text/javascript">
-setTimeout(function sunrise () {
-  document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
-}, 0);
-</script>
 
-<div class="default-page">
-  <div class="header">
-    <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
-    <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
+<!-- Canvas stars -->
+  <script src="no_needJs/starsCanvas.js">
+  <%= title="Jose Raffalli | Home Page" %>
+  </script>
+<!-- Loader -->
+	<div class="fh5co-loader"></div>
+	
+	<!-- Main -->
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="left-menu text-right menu-1">
+					<ul>
+						<li><a href="work.html">Trajectory</a></li>
+						<li><a href="about.html">About me</a></li>
+						<li class="has-dropdown">
+							<a href="services.html">My Services</a>
+							<ul class="dropdown">
+								<li><a href="#">Web Platforms</a></li>							
+								<li><a href="#">Mobile Applications</a></li>								
+								<li><a href="#">IT Consulting</a></li>
+								<li><a href="#">Data Science</a></li>								
+								<li><a href="#">Digital Marketing</a></li>								
+								<li><a href="#">External Audits</a></li>								
+								<li><a href="#">API's Development</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="logo text-center">
+					<!-- Logo and name -->
+					<div id="fh5co-logo"><a href="index.html">Jose</a></div>
+				</div>
+				<div class="right-menu text-left menu-1">
+					<ul>
+						<li><a href="blog.html">My Skills</a></li>
+						<li class="has-dropdown">
+							<a href="#">More Stuff</a>
+							<ul class="dropdown">
+								<li><a href="#">Current Projects</a></li>
+								<li><a href="#">Personal Platform</a></li>
+								<li><a href="#">Preparadurias</a></li>
+								<li style="font-weight: bold;"><a href="#">Login</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact Me!</a></li>
+						<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/ZhGEqAP.jpg);">
+		<div class="container">
+			<div  class="Starcontainer">
+				<canvas id="pixie"></canvas>
+			</div>
+			<div  class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Welcome</h1>
+							<h2>To my small yet awesome world</h2>
+							<!--<div  class="col-sm-4 img-design">
+								<img height="175" src="images/Bitmojis/bitmoji-20170805010006.png" alt="">
+							</div>
+							-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main skills tres columnas  -->
+	<div id="fh5co-services" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-cycle"></i>
+						</span>
+						<h3>Project Manager</h3>
+						<p>I’m skilled in the creation and management of technological projects within any framework. Being responsible of lifting the requiriments of the business, clearly define the objectives for the team, management of resources, costs and possible risks.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-laptop"></i>
+						</span>
+						<h3>Web Developer</h3>
+						<p>From simple web designs to create online profiles, to more robust web systems like API’s or administrative softwares. I'm skilled building incredible visuals and system functionalities using the latest technologies and modern design patterns.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-gauge"></i>
+						</span>
+						<h3>Startups Accelerator</h3>
+						<p>Pitch your business and secure the funding you’ll need to launch your new company. I’ll show you how to write clear, compelling, targeted mission and vision statements. I’m an enthusiast in the creation and management of awesome technological businesses.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- About Feature  -->
+	<div id="fh5co-project"  data-section="about">
+		<div class="container">
+			<div class="row row-bottom-padded-lg" id="about-us">
+				<div style="padding-bottom:1em" class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">About Me</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 to-animate">
+							<h3>Systems Engineer</h3>
+						</div>
+					</div>
+				</div>
+				<div style="padding-left: 60px" class="row">
+				<div class="col-md-6">
+					<h2>Hello there!</h2>
+					<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of technologies. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
+					<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
+					<br> 
+					<p><a href="#" class="btn btn-primary">Want to know more of me?</a></p>
+					<img style="margin-left: 240px; margin-top:-145px" height="100" src="images/Bitmojis/bitmoji-20170805010006.png"  alt="Bitmoji Relax">
+				</div>
+				<div  class="col-sm-6 to-animate">
+					 <!--<img id="imagenAbout"  src="images/NewyorkParkMia.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani about1">	 
+					--><img  width="520" height="320" src="images/IMG_2931.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani">
+					
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services Feature  -->
+	<div id="fh5co-services2" class="fh5co-bg-section">
+		<div align="center" class="container">
+			<div  class="section-heading text-center">
+				<h2>
+					My services
+				</h2>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-user"></i>
+					</span>
+					<div class="desc">
+						<h3>IT Consultancy</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-mobile"></i>
+					</span>
+					<div class="desc">
+						<h3>Multiplatform</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-brush"></i>
+					</span>
+					<div class="desc">
+						<h3>Digital Marketing</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-paper"></i>
+					</span>
+					<div class="desc">
+						<h3>Audits</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-stack"></i>
+					</span>
+					<div class="desc">
+						<h3>Agile Coaching</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 animate-box">
+				<div class="feature-center">
+					<span class="icon icon2">
+						<i class="icon-laptop"></i>
+					</span>
+					<div class="desc">
+						<h3>Web Development</h3>
+					</div>
+				</div>
+			</div>
+			<div style="margin-top:15px;" class="section-heading animate-box" >
+					<button  type="button" class="btn btn-primary">
+						Learn More
+					</button>
+			</div>
+				
+		</div>
+	</div>
+
+	<!-- TimeLine Semi Ready -->
+	<div style="padding-top: 4em; "  class="section-heading text-center">
+		<h2>
+			Trajectory
+		</h2>
+	</div>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Systems Engineering Title</h2>
+				<p>at Universidad Metropolitana,  trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">2018</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Platzi Courses</h2>
+				<p>Multiporpuse courses related to web and multiplatform development, project managment, startup creation, digital marketing and DevOps strategies.  </p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">2016</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Programming Diploma</h2>
+				<p>Institute of new technologies Uneweb, Caracas</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Kek Laboratories</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Type IQS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Free Lancer</h2>
+				<p>This is the content of the last section</p>
+				<span class="cd-date">Feb 26</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+
+	<!-- Collage 1 : Educación  -->
+	<div id="fh5co-project">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
+					<h2>Some achievements</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-git-github-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-html5-css3-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-scrum-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-heroku-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-programacion-basica-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/diploma-sql-mysql-page-001.jpg" alt="Platzi Certificate to Jose Luis Raffalli" class="img-responsive">		
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/Certificado Uneweb.jpg" alt="Certificado Uneweb Raffalli Jose Luis" class="img-responsive">	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2 ">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/Sae Certificate Done.jpg" alt="Sae Aerodesign Certificate" class="img-responsive">
+
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project2">
+					<a href="#"><img class="img-responsive" src="images/Collage 1- Formación/Certificado-UNIMET.png" alt="Unimet certificado a Jose Luis Raffalli" class="img-responsive">
+
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- Testimonios  -->
+	<div id="fh5co-testimonial" style="background-image:url(images/img_bg_1.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Happy Clients</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony animate-box">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote"></i></span></span>
+							<p>&ldquo; Thank you very much Jose, love your work and way of handeling stuff &rdquo;</p>
+						</blockquote>
+						<p class="author">Jason Toussaint - <a href="https://www.louverturetravels.com" target="_blank">Louverture Travels</a> <span class="subtext">CEO at L'ouverture</span></p>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony animate-box">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote"></i></span></span>
+							<p>&ldquo; José is one of our bests programmers and an enthusiastic project manager. He has a bright young mind and is very skilled in the development of web systems &rdquo;</p>
+						</blockquote>
+						<p class="author">Luis sandoval - <a href="www.typeiqs.com" target="_blank">Type IQS</a><span class="subtext">Creative Director at T123 Project</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Code SVG Animation -->
+	<!-- 
+		<div class="bg">
+			<svg xmlns="http://www.w3.org/2000/svg" width="670" height="235" viewBox="560.4 -110.4 670 235" enable-background="new 560.4 -110.4 670 235">
+			
+			<path  class="wind" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="50" stroke-dashoffset="50" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M597.8-86.2h21.7m185.4-3.4h13.5m364.1 25.6h13.5m-225.5-33.8h21.7m35.8 65.8h8.1m-277.8 72h21.7" fill="none"/><g stroke="#4CADC1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none">
+			
+			<path  class="path-delay--4" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="300" stroke-dashoffset="300" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M905.4-36.3v20.3l23.1 21.8-23.1 21.8v20.3l44.6-42.1zM888.2 27.6l-23.1-21.8 23.1-21.8v-20.3l-44.6 42.1 44.6 42.1z"/></g>
+			
+			<g  class="path-delay--3" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M896.8-73.3c-43.7 0-79.1 35.4-79.1 79.1s35.4 79.1 79.1 79.1c43.7 0 79.1-35.4 79.1-79.1s-35.4-79.1-79.1-79.1zM896.8 70.7c-35.8 0-64.9-29.1-64.9-64.9s29.1-64.9 64.9-64.9c35.8 0 64.9 29.1 64.9 64.9s-29.1 64.9-64.9 64.9z"/></g>
+			
+			<g class="clouds" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="200" stroke-dashoffset="200" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M768.1-5.9c-.6-7.3-6.6-13-14.1-13-1.8 0-3.5.3-5.1.9-2.8-5.7-8.7-9.6-15.6-9.6-8.2 0-15.1 5.7-16.9 13.4-.8-.2-1.7-.3-2.6-.3-5.3 0-9.6 3.7-10.6 8.7l64.9-.1zm370.7-60c-.5-6.7-6.1-12-13-12-1.6 0-3.2.3-4.7.9-2.6-5.3-8-8.9-14.3-8.9-7.6 0-13.9 5.2-15.6 12.3-.8-.2-1.6-.3-2.4-.3-4.8 0-8.9 3.4-9.8 8h59.8zm81.2 56.5c-.5-6.4-5.9-11.4-12.4-11.4-1.5 0-3.1.3-4.4.9-2.5-5-7.7-8.4-13.6-8.4-7.2 0-13.2 5-14.9 11.7-.8-.2-1.5-.3-2.3-.3-4.6 0-8.4 3.3-9.3 7.7l56.9-.2zm-128.1 29.4c-.6-7.4-6.8-13.3-14.3-13.3h-.8c-2.8-5.3-8.3-8.9-14.7-8.9-6.5 0-12.1 3.7-14.9 9.2-.9-.2-1.9-.3-2.9-.3-6.7 0-12.2 5.5-12.2 12.2 0 .4 0 .7.1 1.1h59.7zm-358.3-93.8c-.6-7.4-6.8-13.3-14.3-13.3h-.8c-2.8-5.3-8.3-8.9-14.7-8.9-6.5 0-12.1 3.7-14.8 9.2-.9-.2-1.9-.3-2.8-.3-6.7 0-12.2 5.4-12.2 12.2 0 .4 0 .7.1 1.1h59.5zM620.8-15.8c0-4.5-3.6-8.1-8.1-8.1-1.3 0-2.5.3-3.5.8-1.9-5.2-6.9-8.9-12.8-8.9-4.7 0-8.9 2.4-11.3 6.1-1.1-.5-2.3-.7-3.6-.7-5.2 0-9.5 4.3-9.5 9.5 0 .5 0 .9.1 1.4h48.7v-.1z"/>
+			</g>
+			
+			<path  class="path" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="1300" stroke-dashoffset="1300" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M1230.4 112.3c-5.6 0-10.2-4.6-10.2-10.2 0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2s-10.2-4.6-10.2-10.2c0 5.6-4.6 10.2-10.2 10.2" fill="none"/>
+			
+			<g  class="path-delay" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M1001.1 110.3l57.8-57.9 19.3 19.3 53.7-53.7 45.7 45.6 22.4-22.3 32.4 32.5M790 110.3l-69-69-22.3 22.3-42.6-42.6-31.5 31.4-21.3-21.3-43.7 43.7"/></g>
+			
+			<g  class="path-delay" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round"  stroke-linecap="butt" stroke-miterlimit="10" stroke-dasharray="100" stroke-dashoffset="100" stroke="#4CADC1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" fill="none"><path d="M1214.5 53.5l-9.5 9.5-3-3-4.1 4-11.5-11.5M1112.7 37.3l7.1 7.1 5-5.1 7.1 7.1 7.1-7.1 6.2 6 7.1-7.1M711.8 51.5l5.1 5 4.1-4.1 5 5.1 5.1-5.1M668.3 33.2l-6.2 6.1-5.1-5.1-7.1 7.1-7.1-7.1M1046 65.4l8 7.9 5.5-5.5 6 6 7.4-7.4M590.7 43.7l7.3 7.3 4.5-4.6 6.1 6.1 8.2-8.2"/></g></svg>
+			<h1 style="color:#4fd4ad" align="center"> I love coding</h1>
+		</div>
+	-->	
+	<!-- wCollage 2  -->
+	<div style="margin-top:50px;" id="fh5co-project">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
+					<h2>What I am</h2>
+					<h3 >Things I like the most</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\tunnel-view-3840x2160-yosemite-ca-sunset-mountains-clouds-pines-6147.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Mountains</h3>
+						<span>nature and more</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\glenn-carstens-peters-190592.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Building projects</h3>
+						<span>Makinng things work</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\jeshoots-com-250229.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Entertainment</h3>
+						<span>Series, Video games and more</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\domenico-loia-310197.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Workspace</h3>
+						<span>Comfort will make you more productive</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\joshua-earle-2521.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Traveling</h3>
+						<span>Love meeting new places</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
+					<a href="#"><img src="images\Collage 2\hubble_galaxy-2560x1440.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Science</h3>
+						<span>To uncover the mysteries of the world</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Featurrete para contactar  -->
+	<div id="fh5co-started">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Wanna get in touch?</h2>
+					<p>You can contact me for anything you want! Do not hesitate to do so, dropp a comment bellow or get more details here</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form class="form-inline">
+						<div class="col-md-6 col-md-offset-3 col-sm-6">
+							<button type="submit" class="btn btn-default btn-block">Get In Touch</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
   </div>
-  <div class="main container clearfix">
-    <!-- <h1>Getting started</h1>
-    <p>Don't worry, we've got your back.</p> -->
-    <ul class="getting-started">
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite one"></div>
-          <h3>Generate a REST API.</h3>
-          <p>
-            Run <code>sails generate api user</code>.  This will create two files: a <a href="http://sailsjs.org/#!/documentation/concepts/ORM/Models.html">model</a> <code class="pocket">api/models/User.js</code> and a <a href="http://sailsjs.org/#!/documentation/concepts/Controllers">controller</a><code class="pocket">api/controllers/UserController.js</code>.
-          </p>
-        </div>
-      </li>
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite two"></div>
-          <h3>
-            Lift your app.
-          </h3>
-          <p>
-            Run <code>sails lift</code> to start up your app server.  If you visit <a target="_blank" href="http://localhost:<%= sails.config.port || 1337%>/user"><code>http://localhost:<%= sails.config.port || 1337%>/user</code></a> in your browser, you'll see a <a href="http://sailsjs.org/#!/documentation/reference/blueprint-api">WebSocket-compatible</a> user API.
-          </p>
-        </div>
-      </li>
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite three"></div>
-          <h3>
-            Dive in.
-          </h3>
-          <p>Blueprints are just the beginning.  You'll probably also want to learn how to customize your app's <a href="http://sailsjs.org/#!/documentation/concepts/Routes">routes</a>, set up <a href="http://sailsjs.org/#!/documentation/concepts/Policies">security policies</a>, configure your <a href="http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html">data sources</a>, and build custom <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/Controllers?q=actions">controller actions</a>. For more help getting started, check out the links on this page.</p>
 
-        </div>
-      </li>
-    </ul>
-    <div class="links">
-      <!-- <h3>Links</h3> -->
-      <ul class="link-list">
-
-        <h4>Docs</h4>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/anatomy/myApp"><li>App Structure</li></a>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/reference"><li>Reference</li></a>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/extending-sails/Adapters/adapterList.html"><li>Supported Databases</li></a>
-
-        <h4>Tutorials</h4>
-        <a target="_blank" href="https://github.com/sails101"><li>Sails 101</li></a>
-
-        <h4>Community</h4>
-        <a target="_blank" href="http://stackoverflow.com/search?q=sails.js"><li>StackOverFlow</li></a>
-        <a target="_blank" href="https://github.com/balderdashy/sails"><li>GitHub</li></a>
-        <a target="_blank" href="https://groups.google.com/forum/#!forum/sailsjs"><li>Google Group</li></a>
-        <a target="_blank" href="http://webchat.freenode.net/"><li>IRC (#sailsjs on freenode)</li></a>
-
-      </ul>
-    </div>
+  <!-- Ir al tope  -->
+  <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
-</div>
+
+  <script src="no_needJs/timeline.js"></script>

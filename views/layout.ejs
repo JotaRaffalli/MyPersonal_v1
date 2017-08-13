@@ -5,87 +5,115 @@
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-    <!--
-        Stylesheets and Preprocessors
-        ==============================
-
-        You can always bring in CSS files manually with `<link>` tags, or asynchronously
-        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
-        of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-        By default, stylesheets from your `assets/styles` folder are included
-        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
-        are supported. In production, your styles will be minified and concatenated into
-        a single file.
-
-        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-
-            + Change the order of your CSS files
-            + Import stylesheets from other directories
-            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
-    -->
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Jose Raffalli Personal Webpages" />
+    <meta name="keywords" content="Raffalli, Adriani, José Raffalli, jose raffalli, Jose Luis Raffalli, Jose Luis Raffalli Adriani" />
+    <meta name="author" content="Raffalli José Luis / credits to vue js team, free html5.co and code " />
+  <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/icomoon.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/magnific-popup.css">
+    <link rel="stylesheet" href="/styles/starCanvas.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/timelineReset.css">
+    <link rel="stylesheet" href="/styles/timelineStyle.css">
+    <link rel="stylesheet" href="/styles/youtube.css">
     <!--STYLES END-->
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
     <%- body %>
+    <!-- Footer  -->
+		<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-sm">
+				<div class="col-md-4 fh5co-widget">
+					<h3>Jose Luis Raffalli Adriani</h3>
+					<p>Trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization.</p>
+					<p><a href="#">Visit my Github Pages</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Meetups</a></li>
+					</ul>
+				</div>
 
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Handbook</a></li>
+						<li><a href="#">Held Desk</a></li>
+					</ul>
+				</div>
 
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Find Designers</a></li>
+						<li><a href="#">Find Developers</a></li>
+						<li><a href="#">Teams</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">API</a></li>
+					</ul>
+				</div>
+			</div>
 
-    <!--
-        Client-side Templates
-        ========================
-
-        HTML templates are important prerequisites of modern, rich client applications.
-        To work their magic, frameworks like Backbone, Angular, Ember, and Knockout require
-        that you load these templates client-side.
-
-        By default, your Gruntfile is configured to automatically load and precompile
-        client-side JST templates in your `assets/templates` folder, then
-        include them here automatically (between TEMPLATES and TEMPLATES END).
-
-        To customize this behavior to fit your needs, just edit `tasks/pipeline.js`.
-        For example, here are a few things you could do:
-
-            + Import templates from other directories
-            + Use a different template engine (handlebars, jade, dust, etc.)
-            + Internationalize your client-side templates using a server-side
-              stringfile before they're served.
-    -->
-
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">Hope you enjoyed the stay.</small>
+						<small class="block">&copy; 2018 Jose Raffalli All rights reserved.</small> 
+						<small class="block">Special thanks to <a href="http://unsplash.com/" target="_blank">Unsplash</a> for their cool images</small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="https://www.facebook.com/joseluis.raffalli"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://twitter.com/JotaRaffalli"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/jos%C3%A9raffalli/"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://github.com/JotaRaffalli"><i class="icon-github"></i></a></li>
+						</ul> 
+					</p>
+				</div>
+			</div>
+		</div>
+  </footer>
+  
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
-
-    <!--
-
-      Client-side Javascript
-      ========================
-
-      You can always bring in JS files manually with `script` tags, or asynchronously
-      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
-      take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
-
-      By default, files in your `assets/js` folder are included here
-      automatically (between SCRIPTS and SCRIPTS END).  Both JavaScript (.js) and
-      CoffeeScript (.coffee) are supported. In production, your scripts will be minified
-      and concatenated into a single file.
-
-      To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
-      For example, here are a few things you could do:
-
-          + Change the order of your scripts
-          + Import scripts from other directories
-          + Use a different preprocessor, like TypeScript
-
-    -->
-
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/dependencies/jquery.easing.1.3.js"></script>
+    <script src="/js/dependencies/jquery.waypoints.min.js"></script>
+    <script src="/js/dependencies/bootstrap.min.js"></script>
+    <script src="/no_needJs/timeline.js"></script>
+    <script src="/js/modernizr-2.6.2.min.js"></script>
+    <script src="/js/respond.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

@@ -1,0 +1,16 @@
+
+
+.Starcontainer {
+    overflow:hidden;
+    position:absolute;
+    height: 50vh;
+    margin: 0;
+    margin-left: -102px;
+    width: 125%;
+}
+
+#pixie {
+    width: 100%;
+    height: 100%;
+    z-index:0;
+}
