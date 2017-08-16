@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../images/fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../images/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../images/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../images/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../images/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -157,6 +157,7 @@ a:hover, a:active, a:focus {
 p {
   margin-bottom: 20px;
   font-size: 18px;
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif !important;;
   font-weight: lighter !important;
 
 }
@@ -671,9 +672,10 @@ h2 {
   display: block;
 }
 .feature-center .icon i {
-  font-size: 40px;
+  font-size: 30px;
   color: #297cbb;
 }
+
 .feature-center p, .feature-center h3 {
   margin-bottom: 20px;
 }
@@ -681,7 +683,12 @@ h2 {
   margin-bottom: 0;
 }
 .feature-center h3 {
-  font-size: 25px;
+  font-size: 27px;
+  color: #5d5d5d;
+}
+.feature-center .firsts-h3 {
+  margin-top:25px;
+  font-size: 27px;
   color: #5d5d5d;
 }
 .feature-center p {
