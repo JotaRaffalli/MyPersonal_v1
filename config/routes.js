@@ -36,6 +36,10 @@ module.exports.routes = {
     view: 'homepage'
   },
 
+  '/contact': {
+    view: 'contact'
+  },
+
   '/3': {
     view: '3',
     locals: {
