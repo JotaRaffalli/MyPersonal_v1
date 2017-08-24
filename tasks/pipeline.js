@@ -30,7 +30,6 @@ var jsFilesToInject = [
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/jquery.min.js',
-  'js/dependencies/jquery.js',
   '/js/main.js',
   '/js/dependencies/jquery.easing.1.3.js',
   '/js/dependencies/jquery.waypoints.min.js',

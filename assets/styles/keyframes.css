@@ -1,0 +1,27 @@
+
+#volar {
+    animation: vuela 4s infinite;
+}
+@keyframes vuela
+{
+0% {
+    transform: rotate(5deg);
+    
+}
+25% {
+    transform: rotate(15deg);
+    margin-left: 50px;
+}
+50%{
+    transform: scale(1.05) rotate(-15deg);
+    
+}
+75% {
+    
+    margin-left: -20px;
+}
+100%{
+
+    transform: rotate(5deg);
+}
+}

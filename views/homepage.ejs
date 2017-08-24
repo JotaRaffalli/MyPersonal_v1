@@ -4,7 +4,6 @@
 <script src="no_needJs/starsCanvas.js"></script>
 <!-- Typed -->
 <script src="no_needJs/typed.js"></script>
-
 <!-- Blinking cursor effect -->
 <style>
 		.typed-cursor{
@@ -28,6 +27,19 @@
 			50% { opacity:0; }
 			100% { opacity:1; }
 		}
+</style>
+<!-- Home page media queries -->
+<style>
+	@media (max-width: 600px) {
+  		.typed-cursor {
+    	display: none;
+		  }
+		  p{
+			 font-weight: normal; 
+		  }
+
+	}
+	
 </style>
 
 <link rel="stylesheet" href="no_needStyles/codeSvg.css">
@@ -82,6 +94,7 @@
 		</div>
 	</nav>
 
+
 	<!-- Header -->
 	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/ZhGEqAP.jpg);">
 		<div class="container">
@@ -92,15 +105,19 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Welcome</h1>
+							<h1>Hi I'm Jose Luis Raffalli</h1>
 							<h2>I love <span style="color:#b82323; font-weight:500" id="typed3"></span></h2>
-							<!--<div  class="col-sm-4 img-design">
-								<img height="175" src="images/Bitmojis/bitmoji-20170805010006.png" alt="">
-							</div>
-							-->
+							
+							
 						</div>
 					</div>
 				</div>
+						<div style="top:-200px" class="col-sm-4">
+								<img height="175" src="images/Bitmojis/bitmoji-20170820121841.png" alt="">
+						</div>
+						<div  style="margin-top:140px; left:500px" >
+								<img id="volar"  height="125" src="images/Bitmojis/bitmoji-20170811100742.png" alt="">
+						</div>
 			</div>
 		</div>
 	</header>
@@ -158,7 +175,7 @@
 					<h2>Hello there!</h2>
 					<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of <strong>technologies</strong>. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
 					<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
-					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary"></a></p>
+					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary">Wanna learn more?</a></p>
 					<img id="moji1" class="animated" style="margin-left: 250px; margin-top:-145px" height="85" src="images/Bitmojis/bitmoji-20170805010006.png"  alt="Bitmoji Relax">
 				</div>
 				<div id="aboutBriefImg"  class="col-sm-6 animated">
@@ -181,7 +198,7 @@
 					<h2>I like modern and fast things</h2>
 					<p> I always keep updated and at the forefront of changes in the world.</p> 
 					<p>I consider myself mature when it comes to making decisions, always trying to see things objectively based on facts, but also looking for a middle point. </p>
-					<p><a href="/about" class="btn btn-primary">Wanna learn more about me?</a></p>
+					<p><a href="/about" class="btn btn-primary">Wanna learn more?</a></p>
 					<div align="right">
 						<img  id="moji2" class="animated" style="" height="230" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
 					</div>
@@ -215,7 +232,7 @@
 						<i class="icon-mobile"></i>
 					</span>
 					<div class="desc">
-						<h3>Multiplatform Development</h3>
+						<h3>Multiplatform Dev</h3>
 					</div>
 				</div>
 			</div>
@@ -225,7 +242,7 @@
 						<i class="icon-brush"></i>
 					</span>
 					<div class="desc">
-						<h3>Digital Marketing Advisor</h3>
+						<h3>Digital Marketing</h3>
 					</div>
 				</div>
 			</div>
@@ -545,19 +562,15 @@
 </div>
 <!-- Typed code -->
 <script>
-		var type1 = new Typed('#typed1', {
-			strings: ["Wanna learn more?", "Click here!"],
-  			typeSpeed: 100
+		var type3 = new Typed('#typed3', {
+			strings: [ "teaching", "technology", "Angular" , "managing projects", "pizza","web development", "game of thrones", "the world" ],
+			loop: true,
+  			loopCount: 3,
+			startDelay: 1200,
+			backSpeed: 40,
+			backDelay: 1000,
+  			typeSpeed: 110
 		});
 
-		var type3 = new Typed('#typed3', {
-			strings: ["teaching", "technology", "managing projects", "pizza","web development", "game of thrones", "the world"],
-			shuffle: true,
-			loop: true,
-  			loopCount: 2,
-			startDelay: 1000,
-			backSpeed: 20,
-			backDelay: 1000,
-  			typeSpeed: 90
-		});
+		
 </script>

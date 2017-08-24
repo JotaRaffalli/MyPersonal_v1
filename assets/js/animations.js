@@ -19,5 +19,6 @@ $(document).ready(function(){
     },  function() {
         $('#moji2').removeClass('tada') 
     } );
+   
 
 });
