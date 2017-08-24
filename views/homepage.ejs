@@ -1,25 +1,51 @@
-
+<!-- Titulo de pagina -->
+ <title><%= title="Jose Raffalli | Home Page" %></title>
 <!-- Canvas stars -->
-<script src="no_needJs/starsCanvas.js">
-  <%= title="Jose Raffalli | Home Page" %>
-</script>
+<script src="no_needJs/starsCanvas.js"></script>
+<!-- Typed -->
+<script src="no_needJs/typed.js"></script>
+
+<!-- Blinking cursor effect -->
+<style>
+		.typed-cursor{
+			opacity: 1;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
+		}
+		@keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-webkit-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+		@-moz-keyframes blink{
+			0% { opacity:1; }
+			50% { opacity:0; }
+			100% { opacity:1; }
+		}
+</style>
 
 <link rel="stylesheet" href="no_needStyles/codeSvg.css">
 
 <!-- Loader -->
 	<div class="fh5co-loader"></div>
 	
-	<!-- Main -->
-	<div id="page">
+<!-- Main -->
+<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="left-menu text-right menu-1">
 					<ul>
-						<li><a href="work.html">Trajectory</a></li>
-						<li><a href="about.html">About me</a></li>
+						<li><a href="#trajectory">Trajectory</a></li>
+						<li><a href="about">About me</a></li>
 						<li class="has-dropdown">
-							<a href="services.html">My Services</a>
+							<a href="/services">My Services</a>
 							<ul class="dropdown">
 								<li><a href="#">Web Platforms</a></li>							
 								<li><a href="#">Mobile Applications</a></li>								
@@ -34,11 +60,11 @@
 				</div>
 				<div class="logo text-center">
 					<!-- Logo and name -->
-					<div id="fh5co-logo"><a href="index.html">Jose</a></div>
+					<div id="fh5co-logo"><a href="/">Jose</a></div>
 				</div>
 				<div class="right-menu text-left menu-1">
 					<ul>
-						<li><a href="blog.html">My Skills</a></li>
+						<li><a href="/skills">My Skills</a></li>
 						<li class="has-dropdown">
 							<a href="#">More Stuff</a>
 							<ul class="dropdown">
@@ -48,7 +74,7 @@
 								<li style="font-weight: bold;"><a href="#">Login</a></li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Contact Me!</a></li>
+						<li><a href="/contact">Contact Me!</a></li>
 						<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
 					</ul>
 				</div>
@@ -67,7 +93,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Welcome</h1>
-							<h2>This is my personal site</h2>
+							<h2>I love <span style="color:#b82323; font-weight:500" id="typed3"></span></h2>
 							<!--<div  class="col-sm-4 img-design">
 								<img height="175" src="images/Bitmojis/bitmoji-20170805010006.png" alt="">
 							</div>
@@ -132,7 +158,7 @@
 					<h2>Hello there!</h2>
 					<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of <strong>technologies</strong>. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
 					<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
-					<p><a href="/about" class="btn btn-primary">Wanna learn more about me?</a></p>
+					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary"></a></p>
 					<img id="moji1" class="animated" style="margin-left: 250px; margin-top:-145px" height="85" src="images/Bitmojis/bitmoji-20170805010006.png"  alt="Bitmoji Relax">
 				</div>
 				<div id="aboutBriefImg"  class="col-sm-6 animated">
@@ -155,7 +181,7 @@
 					<h2>I like modern and fast things</h2>
 					<p> I always keep updated and at the forefront of changes in the world.</p> 
 					<p>I consider myself mature when it comes to making decisions, always trying to see things objectively based on facts, but also looking for a middle point. </p>
-					<p><a href="#" class="btn btn-primary">Wanna learn more about me?</a></p>
+					<p><a href="/about" class="btn btn-primary">Wanna learn more about me?</a></p>
 					<div align="right">
 						<img  id="moji2" class="animated" style="" height="230" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
 					</div>
@@ -189,7 +215,7 @@
 						<i class="icon-mobile"></i>
 					</span>
 					<div class="desc">
-						<h3>Multiplatform</h3>
+						<h3>Multiplatform Development</h3>
 					</div>
 				</div>
 			</div>
@@ -199,7 +225,7 @@
 						<i class="icon-brush"></i>
 					</span>
 					<div class="desc">
-						<h3>Digital Marketing</h3>
+						<h3>Digital Marketing Advisor</h3>
 					</div>
 				</div>
 			</div>
@@ -244,7 +270,7 @@
 	</div>
 
 	<!-- TimeLine Semi Ready -->
-	<div style="padding-top: 4em; "  class="section-heading text-center">
+	<div id="trajectory" style="padding-top: 4em; "  class="section-heading text-center">
 		<h2>
 			Trajectory
 		</h2>
@@ -516,5 +542,22 @@
   <div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
+</div>
+<!-- Typed code -->
+<script>
+		var type1 = new Typed('#typed1', {
+			strings: ["Wanna learn more?", "Click here!"],
+  			typeSpeed: 100
+		});
 
- 
+		var type3 = new Typed('#typed3', {
+			strings: ["teaching", "technology", "managing projects", "pizza","web development", "game of thrones", "the world"],
+			shuffle: true,
+			loop: true,
+  			loopCount: 2,
+			startDelay: 1000,
+			backSpeed: 20,
+			backDelay: 1000,
+  			typeSpeed: 90
+		});
+</script>
