@@ -19,6 +19,17 @@ $(document).ready(function(){
     },  function() {
         $('#moji2').removeClass('tada') 
     } );
-   
+    $("#contactarFeature1").waypoint(function() {
+        $('#contactarFeature1').addClass('fadeInUp');
+    }, { offset: '100%'});
+    $("#contactarFeature2").waypoint(function() {
+        $('#contactarFeature2').addClass('fadeInUp');
+    }, { offset: '100%'});
+    $("#testimonial").waypoint(function() {
+        $('#testimonial').addClass('fadeInUp');
+    }, { offset: '100%'});
+    $("#collage2").waypoint(function() {
+        $('#collage2').addClass('fadeInUp');
+    }, { offset: '100%'});
 
 });

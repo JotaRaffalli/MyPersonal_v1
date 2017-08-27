@@ -94,7 +94,7 @@ body {
   bottom: 0;
 }
 .section-heading h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #555;
   position: relative;
   display: block;
@@ -113,7 +113,7 @@ body {
   color: #929292;
 }
 .feature {
-  padding: 5em 0;
+  padding-top: 4em 0;
   clear: both; 
 }
 
@@ -156,9 +156,7 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 20px;
-  font-size: 18px;
-  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif !important;;
-  font-weight: lighter !important;
+  font-size: 17.25px;
 
 }
 

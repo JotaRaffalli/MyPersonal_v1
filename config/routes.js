@@ -40,6 +40,10 @@ module.exports.routes = {
     view: 'contact'
   },
 
+  '/about': {
+    view: 'about'
+  },
+
   '/3': {
     view: '3',
     locals: {
