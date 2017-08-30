@@ -1,5 +1,5 @@
 <!-- Titulo de pagina -->
- <title><%= title="Jose Raffalli | Home Page" %></title>
+ <title><%= title="Jose Raffalli Adriani| Personal Website" %></title>
 <!-- Canvas stars -->
 <script src="no_needJs/starsCanvas.js"></script>
 <!-- Typed -->
@@ -54,7 +54,7 @@
 			<div class="row">
 				<div class="left-menu text-right menu-1">
 					<ul>
-						<li><a href="#trajectory">Trajectory</a></li>
+						<li><a style="cursor: pointer;" onclick="trajectory()">Trajectory</a></li>
 						<li><a href="about">About me</a></li>
 						<li class="has-dropdown">
 							<a href="/services">My Services</a>
@@ -110,8 +110,6 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</header>
@@ -557,8 +555,8 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
 </div>
-<!-- Typed code -->
 <script>
+		//Typed
 		var type3 = new Typed('#typed3', {
 			strings: [ "teaching", "technology", "Angular" , "managing projects", "pizza","web development", "Game of Thrones", "the world" ],
 			loop: true,
@@ -578,5 +576,9 @@
   			typeSpeed: 50
 		});
 
+		// Scroll
+		function trajectory () {
+        EPPZScrollTo.scrollVerticalToElementById('trajectory', 100);
+    }
 		
 </script>
