@@ -1,0 +1,36 @@
+/*Blinking cursor effect */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media (max-width: 600px) {
+    .typed-cursor {
+  display: none;
+    }
+    p{
+       font-weight: normal; 
+    }
+    #mojiText {
+        margin-top:50px !important;
+        width: 50%;
+        margin-left:0 !important;
+    }
+}

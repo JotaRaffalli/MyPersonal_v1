@@ -33,15 +33,31 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'homepage',
+    locals: {
+      title:"Jose Raffalli Adriani Personal Website"
+    }
   },
 
   '/contact': {
-    view: 'contact'
+    view: 'contact',
+    locals: {
+      title:"Jose Raffalli | Contact"
+    }
   },
 
   '/about': {
-    view: 'about'
+    view: 'about',
+    locals: {
+      title:"Jose Raffalli | About",
+    }
+  },
+
+  '/services': {
+    view: 'services/services',
+    locals: {
+      title:"Jose Raffalli | Services",
+    }
   },
 
   '/3': {

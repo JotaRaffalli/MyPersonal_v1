@@ -1,46 +1,7 @@
-<!-- Titulo de pagina -->
- <title><%= title="Jose Raffalli Adriani| Personal Website" %></title>
 <!-- Canvas stars -->
 <script src="no_needJs/starsCanvas.js"></script>
 <!-- Typed -->
 <script src="no_needJs/typed.js"></script>
-<!-- Blinking cursor effect -->
-<style>
-		.typed-cursor{
-			opacity: 1;
-			-webkit-animation: blink 0.7s infinite;
-			-moz-animation: blink 0.7s infinite;
-			animation: blink 0.7s infinite;
-		}
-		@keyframes blink{
-			0% { opacity:1; }
-			50% { opacity:0; }
-			100% { opacity:1; }
-		}
-		@-webkit-keyframes blink{
-			0% { opacity:1; }
-			50% { opacity:0; }
-			100% { opacity:1; }
-		}
-		@-moz-keyframes blink{
-			0% { opacity:1; }
-			50% { opacity:0; }
-			100% { opacity:1; }
-		}
-</style>
-<!-- Home page media queries -->
-<style>
-	@media (max-width: 600px) {
-  		.typed-cursor {
-    	display: none;
-		  }
-		  p{
-			 font-weight: normal; 
-		  }
-
-	}
-	
-</style>
 
 <link rel="stylesheet" href="no_needStyles/codeSvg.css">
 
@@ -106,7 +67,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Jose Luis Raffalli</h1>
-							<h2>I love <span style="color:#b82323; font-weight:500" id="typed3"></span></h2>
+							<h2>I love <span style="color:#b82323; font-weight:400" id="typed3"></span></h2>
 						</div>
 					</div>
 				</div>
@@ -157,6 +118,7 @@
 
 	<!-- About Feature  -->
 	<div id="fh5co-project"  >
+		<!-- About 1  -->
 		<div class="container">
 			<div class="row row-bottom-padded-lg" id="about-us">
 				<div style="padding-bottom:1em" class="col-md-12 section-heading text-center">
@@ -167,8 +129,8 @@
 					<h2>Hello there!</h2>
 					<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of <strong>technologies</strong>. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
 					<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
-					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary">Wanna learn more about me?</a></p>
-					<img id="moji1" class="animated" style="margin-left: 250px; margin-top:-145px" height="90" src="images/Bitmojis/bitmoji-20170805010006.png"  alt="Bitmoji Relax">
+					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary">More about me?</a></p>
+					<img id="moji1" class="animated" style="margin-left: 165px; margin-top:-145px" height="90" src="images/Bitmojis/bitmoji-20170805010006.png"  alt="Bitmoji Relax">
 				</div>
 				<div id="aboutBriefImg"  class="col-sm-6 animated">
 					 <!--<img id="imagenAbout"  src="images/NewyorkParkMia.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani about1">	 
@@ -178,23 +140,23 @@
 				</div>
 			</div>
 		</div>
+		<!-- About 2  -->
 		<div class="container">
 			<div class="row row-bottom-padded-lg" id="about-us">
 				<div style="margin-left: 5px; margin-right: 5px" class="row">
 				<div align="center" id="aboutBriefImg2"  class="col-sm-6 animated">
 					 <!--<img id="imagenAbout"  src="images/NewyorkParkMia.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani about1">	 
-					--><img  width="175" height="200" src="images/Yo sin fondo en NY.png" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani">
-					
+					--><img  width="175" height="200" src="images/Yo sin fondo en NY.png" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani">	
 				</div>
 				<div id="aboutBrief2" class="col-sm-6 animated">
 					<h2>I like modern and fast things</h2>
 					<p> I always keep updated and at the forefront of changes in the world.</p> 
 					<p>I consider myself mature when it comes to making decisions, always trying to see things objectively based on facts, but also looking for a middle point. </p>
-					<p><a href="/about" class="btn btn-primary">Wanna learn more?</a></p>
+					<p><a href="/contact" class="btn btn-primary">Contact me</a></p>
 					<div align="right">
 						<!-- <a style="position:absolute; margin-top:140px" href="/contact" class="btn btn-primary">Contact</a> -->
-						<div style="margin-top:100px; margin-left:120px; position:absolute;">
-							<span id="dialog1"</span>
+						<div id="mojiText" style="margin-top:100px; margin-left:90px; position:absolute;">
+							<span id="dialog1"></span>
 						</div>
 						<img  id="moji2" class="animated"   height="230" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
 					</div>
@@ -558,7 +520,7 @@
 <script>
 		//Typed
 		var type3 = new Typed('#typed3', {
-			strings: [ "teaching", "technology", "Angular" , "managing projects", "pizza","web development", "Game of Thrones", "the world" ],
+			strings: [  "technology", "teaching", "Angular" , "project management", "web development", "pizza", "Game of Thrones", "the world" ],
 			loop: true,
   			loopCount: 3,
 			startDelay: 1200,
@@ -568,11 +530,11 @@
 		});
 
 		var type4 = new Typed('#dialog1', {
-			strings: [" " ,"Click the button if you wish to contact me!", "Or keep scrolling to see my services",  ],
+			strings: [" " ,"Click the button if you wish to contact me!", "Or keep scrolling to see a list of my services", "Head to the about page to learn more"  ],
 			loop: true,
-  			loopCount: 3,
+  			loopCount: 12,
 			backSpeed: 20,
-			backDelay: 200,
+			backDelay: 2000,
   			typeSpeed: 50
 		});
 
