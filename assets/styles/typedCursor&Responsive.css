@@ -29,8 +29,12 @@
        font-weight: normal; 
     }
     #mojiText {
-        margin-top:50px !important;
-        width: 50%;
-        margin-left:0 !important;
+        margin-top:40px !important;
+        width: 55%;
+        margin-left:-10px !important;
+    }
+    #moji2 {
+        margin-left: 80px !important;
+        height: 200px;
     }
 }

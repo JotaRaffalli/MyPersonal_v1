@@ -60,6 +60,13 @@ module.exports.routes = {
     }
   },
 
+  '/skills': {
+    view: 'skills',
+    locals: {
+      title:"Jose Raffalli | Skills",
+    }
+  },
+
   '/3': {
     view: '3',
     locals: {
