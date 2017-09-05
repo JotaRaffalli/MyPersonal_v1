@@ -18,7 +18,7 @@ module.exports.email = {
     }
     ,
     templateDir: "api/emailTemplates",
-    from: "postmaster@sandboxab7bfb0629b54aa28917b4c90cf1f121.mailgun.org",
+    from: "contacto@raffallijoseluis.com",
     testMode: false,
     ssl: true,
    }
