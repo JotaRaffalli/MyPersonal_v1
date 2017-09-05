@@ -78,6 +78,10 @@ module.exports.routes = {
     view: '../sitmap.xml',
   },
 
+  'POST /formSent': 'EmailController.enviarContactForm',
+
+
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
