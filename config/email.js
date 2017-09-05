@@ -9,7 +9,12 @@ module.exports.email = {
     transporter: {
         tls: {
             rejectUnauthorized: false
-        }
+        },
+        service: "Mailgun",
+        auth: {
+            user: "postmaster@sandboxab7bfb0629b54aa28917b4c90cf1f121.mailgun.org", 
+            pass: "0a5a626bb7fefff8a1a45871095e0717"
+            }
     }
     ,
     templateDir: "api/emailTemplates",
