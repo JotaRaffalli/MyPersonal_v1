@@ -37,7 +37,7 @@ var jsFilesToInject = [
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/jquery.easypiechart',
+  'js/jquery.easypiechart.js',
   'no_needJs/timeline.js',
   'no_needJs/youtubeplayer.js',
   'no_needJs/typed.js',
