@@ -42,7 +42,8 @@ module.exports.routes = {
   '/contact': {
     view: 'contact',
     locals: {
-      title:"Jose Raffalli | Contact"
+      title:"Jose Raffalli | Contact",
+      mailSent: false
     }
   },
 

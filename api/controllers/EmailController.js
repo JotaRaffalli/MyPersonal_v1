@@ -9,7 +9,11 @@ module.exports = {
     enviarContactForm: function (req, res) {
         Mailer.sendContactForm(req.body);
         console.log(req.body); 
-        res.view("homepage");
+        res.ok({
+            mailSent: true,
+          });
+        
+        
     }
 };
 
