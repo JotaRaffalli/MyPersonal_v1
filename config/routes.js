@@ -75,7 +75,7 @@ module.exports.routes = {
   },
 
   'GET /sitemap' : {
-    view: '../sitmap.xml',
+    view: '../sitmap',
   },
 
   'POST /formSent': 'EmailController.enviarContactForm',

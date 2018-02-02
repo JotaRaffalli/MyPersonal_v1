@@ -8,7 +8,7 @@
 module.exports = {
     enviarContactForm: function (req, res) {
         Mailer.sendContactForm(req.body);
-        console.log(req.body);
+        console.log(req.body); 
         res.view("homepage");
     }
 };
