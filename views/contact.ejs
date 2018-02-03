@@ -1,6 +1,32 @@
 <div class="fh5co-loader"></div>
 <script>
-    var mailSent = <%= mailSent %>
+
+
+        function enviarCorreo() {
+            let nombre = document.getElementById('nombre').value;
+            let apellido = document.getElementById('apellido').value;
+            let subject = document.getElementById('subject').value;
+            let message = document.getElementById('message').value;
+            let email = document.getElementById('email').value;
+
+            let obj = {
+                nombre : nombre,
+                apellido: apellido,
+                subject: subject,
+                message: message,
+                email: email
+            }
+            console.log('este es el objeto',obj);
+            fetch('/formSent', {  method: 'post',  body: obj })
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    let mailSent = data.results;
+                    console.log(mailSent);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });  
+    } 
 
 </script>
 <div id="page">
@@ -37,7 +63,6 @@
                         </ul>
                     </li>
                     <li class="active"><a href="contact">Contact</a></li>
-                    
                 </ul>
             </div>
         </div>
@@ -69,8 +94,8 @@
                     <h3>Contact Information</h3>
                     <ul>
                         <li class="address"> Currently at: Caracas Venezuela, <br> Urb. Los Samanes, Av. La Colina </li>
-                        <li class="phone"><a href="tel://1234567920">+ 58 412 6303402</a></li>
-                        <li class="email"><a href="mailto:info@yoursite.com">jraffalli@typeiqs.com</a></li>
+                        <li class="phone"><a href="tel://4126303402">+ 58 412 6303402</a></li>
+                        <li class="email"><a href="mailto:jraffall@typeiqs.com">jraffalli@typeiqs.com</a></li>
                         <li class="url"><a target="_blank" href="www.typeiqs.com/">Type IQS</a></li>
                     </ul>
                 </div>
@@ -78,15 +103,14 @@
             </div>
             <div class="col-md-6">
                 <h3>Get In Touch with me</h3>
-                <form action-xhr="/formSent" method="post">
                     <div class="row form-group">
                         <div class="col-md-6">
                             <!-- <label for="fname">First Name</label> -->
-                            <input type="text" id="fname" name="nombre" class="form-control" placeholder="Your firstname">
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Your firstname">
                         </div>
                         <div class="col-md-6">
                             <!-- <label for="lname">Last Name</label> -->
-                            <input type="text" id="lname" name="apellido" class="form-control" placeholder="Your lastname">
+                            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Your lastname">
                         </div>
                     </div>
 
@@ -111,7 +135,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn btn-primary">
+                        <button onclick="enviarCorreo()" class="btn btn-primary">
+                                Send Message
+                        </button>
 
                         <% if ( mailSent) { %>
 
@@ -122,9 +148,7 @@
                        <% } %>
 
                         
-                    </div>
-
-                </form>		
+                    </div>	
             </div>
         </div>
         
@@ -132,7 +156,6 @@
 </div>
 
 <style>
-
 
 .checkmark__circle {
   stroke-dasharray: 166;

@@ -7,8 +7,10 @@
 
 module.exports = {
     enviarContactForm: function (req, res) {
-        Mailer.sendContactForm(req.body);
-        console.log(req.body); 
+        Mailer.sendContactForm(req.allParams());
+        console.log(req.allParams()); 
+        console.log(req.param('obj')); 
+        
         res.ok({
             mailSent: true,
           });
