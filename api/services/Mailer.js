@@ -1,4 +1,4 @@
-module.exports.sendContactForm = function(obj) {
+module.exports.sendContactForm = async function(obj) {
     sails.hooks.email.send(
     "contactTemplate", 
     {
@@ -6,11 +6,11 @@ module.exports.sendContactForm = function(obj) {
     apellido: obj.apellido,
     email: obj.email,
     subject: obj.subject,
-    mensaje: obj.mensaje
+    mensaje: obj.message
     },
     {
     to: "raffallijoseluis@gmail.com",
-    subject: "CONTACTO: Email de Pagina Personal"
+    subject: "Contacto Página Personal "+obj.apellido
     },
     function(err) {console.log(err || "Mail Sent!");}
     )
