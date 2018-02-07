@@ -30,7 +30,7 @@ module.exports.http = {
   *                                                                          *
   ***************************************************************************/
 
-  requireHttps: function(req, res, next) {
+  /* requireHttps: function(req, res, next) {
     if (!req.secure && req.url!="localhost") {
       return res.redirect('https://' + req.get('host') + req.url);
     }
@@ -55,7 +55,7 @@ module.exports.http = {
       'favicon',
       '404',
       '500'
-    ],
+    ], */
 
   /****************************************************************************
   *                                                                           *
