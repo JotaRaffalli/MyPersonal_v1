@@ -15,7 +15,7 @@
 			<div class="row">
 				<div class="left-menu text-right menu-1">
 					<ul>						
-						<li><a href="about">About me</a></li>
+						<li><a style="cursor: pointer;" onclick="goToAbout()">About me</a></li>
 						<li><a style="cursor: pointer;" onclick="trajectory()">Trajectory</a></li>
 						<li class="has-dropdown">
 							<a href="/services">Services</a>
@@ -26,7 +26,7 @@
 								<li><a href="/services">Data Science</a></li>								
 								<li><a href="/services">Digital Marketing</a></li>								
 								<li><a href="/services">External Audits</a></li>								
-								<li><a href="/services">API's Development</a></li>
+								<li><a href="/services">APIs Development</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -66,7 +66,11 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Jose Luis Raffalli</h1>
 							<h2>I love <span style="color:#afceff; font-weight:400" id="typed3"></span></h2>
-							
+							<div class="row" >
+									<div class="col-md-6 col-md-offset-3 col-sm-6" >
+										<a style="margin-top: 20px;" href="/contact"  class="btn btn-block" >Contact</a>
+									</div>
+							</div> 
 						</div>
 					</div>
 				</div>
@@ -97,7 +101,7 @@
 								</span>
 						</div>
 						<h3 class="firsts-h3" align="center">Fullstack Developer</h3>
-						<p>From simple web designs, to more robust web systems like API’s or administrative softwares. I'm skilled building incredible visuals and system functionalities using the latest technologies and modern design patterns.</p>
+						<p>From simple web designs, to more robust web systems like APIs or administrative softwares. I'm skilled building incredible visuals and system functionalities using the latest technologies and modern design patterns.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
@@ -123,19 +127,61 @@
 				<div style="padding-bottom:1em" class="col-md-12 section-heading text-center">
 					<h2>About Me</h2>
 				</div>
-				<div style="margin-left: 10px; margin-right: 10px" class="row">
-				<div id="aboutBrief" class="col-md-6 animated">
-					<h2>Hello there!</h2>
-					<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of <strong>technologies</strong>. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
-					<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
-					<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary">More about me?</a></p>
-					<img id="moji1" class="animated" style="margin-left: 165px; margin-top:-145px" height="90" src="images/Bitmojis/bitmoji-20170811100659.png"  alt="Bitmoji Relax">
-				</div>
-				<div id="aboutBriefImg"  class="col-sm-6 animated">
-					 <!--<img id="imagenAbout"  src="images/NewyorkParkMia.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani about1">	 
-					--><img  width="550" height="350" src="images/IMG_2931.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani">
-					
-				</div>
+				<!-- 				<div style="margin-left: 10px; margin-right: 10px" class="row">
+							<div id="aboutBrief" class="col-md-6 animated">
+								<h2>Hello there!</h2>
+								<p>My name is Jose Luis Raffalli, I am an enthusiast and lover of all sort of <strong>technologies</strong>. I like to manage projects, build cool interfaces and help people create amazing companies through the use of software.</p> 
+								<p>I’m a systems engineer trained to study interdisciplinary problems of diverse types and complexity, related to the handling of information within an organization. </p>
+								<p><a id="typed1" style="display: inline-block"  href="/about" class="btn btn-primary">More about me?</a></p>
+								<img id="moji1" class="animated" style="margin-left: 165px; margin-top:-145px" height="90" src="images/Bitmojis/bitmoji-20170811100659.png"  alt="Bitmoji Relax">
+							</div>
+							<div id="aboutBriefImg"  class="col-sm-6 animated">
+								<img  width="550" height="350" src="images/IMG_2931.jpg" class="img-responsive img-rounded" alt="José Luis Raffalli Adriani">
+								
+							</div>
+							</div> -->
+				<!-- Foto circular  -->
+				<div class="about-content">
+					<div class="row">
+						<div class=" animate-box" data-animate-effect="fadeIn">
+							<div class="fh5co-staff">
+								<img src="images/sml.jpg" alt="José Raffalli Adriani">
+								<h3>José Luis Raffalli Adriani</h3>
+								<strong class="role">Systems Engineer</strong>
+								<p>
+									Systems Engineer specialized in IT project management and internal business communications.<br>
+									Experienced as full stack developer, agile coaching and modern system architectures designs. 
+									As Systems Engineer, I'm trained to study interdisciplinary problems of diverse types
+									and complexity, related to the handling of information within an organization. 
+								</p>
+								<ul class="fh5co-social-icons">
+									<li>
+										<a href="https://www.facebook.com/joseluis.raffalli">
+											<i class="icon-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://twitter.com/JotaRaffalli">
+											<i class="icon-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/jos%C3%A9raffalli/">
+											<i class="icon-linkedin"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/JotaRaffalli">
+											<i class="icon-github"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div style="text-align: center; margin-top:-15px">
+								<a target="_blank" href="http://attachments.angel.co/2137701-e4cee1d769e7198002e5ed2ae953c404.pdf?1531284394" class="btn btn-primary ">Curriculum Viate</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -149,15 +195,20 @@
 				</div>
 				<div id="aboutBrief2" class="col-sm-6 animated">
 					<h2>I like modern and fast things</h2>
-					<p> I always keep updated and at the forefront of changes in the world.</p> 
-					<p>I consider myself mature when it comes to making decisions, always trying to see things objectively based on facts, but also looking for a middle point. </p>
+					<p>
+							I'm good at leading and managing projects with experience in the 
+							​​agile/lean development fields. It is easy for me to identify and raise 
+							requirements, define objectives for my designate development team, manage 
+							the available resources, as well as the costs and possible risks, according to 
+							the impact they may represent to the business.
+					</p>
 					<p><a href="/contact" class="btn btn-primary">Contact me</a></p>
 					<div align="right">
 						<!-- <a style="position:absolute; margin-top:140px" href="/contact" class="btn btn-primary">Contact</a> -->
 						<div id="mojiText" style="margin-top:100px; margin-left:90px; position:absolute;">
 							<span id="dialog1"></span>
 						</div>
-						<img  id="moji2" class="animated"   height="230" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
+						<img  id="moji2" class="animated"   height="215" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
 					</div>
 				</div>
 				</div>
@@ -520,7 +571,10 @@
 
 		// Scroll
 		function trajectory () {
-        EPPZScrollTo.scrollVerticalToElementById('trajectory', 100);
-    }
+        	EPPZScrollTo.scrollVerticalToElementById('trajectory', 100);
+		}
+		function goToAbout () {
+        	EPPZScrollTo.scrollVerticalToElementById('about-us', 100);
+    	}
 		
 </script>
