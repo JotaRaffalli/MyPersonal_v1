@@ -23,7 +23,33 @@ module.exports.http = {
 
   middleware: {
     compress : require('compression')(),
-
+    order: [
+      'redirectToWWW',
+      'startRequestTimer',
+      'cookieParser',
+      'session',
+      'myRequestLogger',
+      'bodyParser',
+      'handleBodyParserError',
+      'compress',
+      'methodOverride',
+      'poweredBy',
+      '$custom',
+      'requireHttps',
+      'router',
+      'www',
+      'favicon',
+      '404',
+      '500'
+    ],
+    redirectToWWW: function(req, res, next) {
+      var host = req.header("host");
+      if (host.match(/^www\..*/i) && req.url!="localhost") {
+        next();
+      } else {
+        res.redirect(301, "http://www." + host + req.url);
+      }
+    },
   /***************************************************************************
   *                                                                          *
   * The order in which middleware should be run for HTTP request. (the Sails *

@@ -1,7 +1,7 @@
 <!-- Canvas stars -->
-<script src="no_needJs/starsCanvas.js"></script>
+<!-- <script src="no_needJs/starsCanvas.js"></script> -->
 <!-- Typed -->
-<script src="no_needJs/typed.js"></script>
+<!-- <script src="no_needJs/typed.js"></script> -->
 
 <!-- <link rel="stylesheet" href="no_needStyles/codeSvg.css"> -->
 
@@ -55,7 +55,7 @@
 
 
 	<!-- Header -->
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/ZhGEqAP.jpg);">
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/pexels-photo-hd.jpg);">
 		<div class="container">
 			<div  class="Starcontainer">
 				<canvas id="pixie"></canvas>
@@ -148,11 +148,11 @@
 								<img src="images/sml.jpg" alt="José Raffalli Adriani">
 								<h3>José Luis Raffalli Adriani</h3>
 								<strong class="role">Systems Engineer</strong>
-								<p>
+								<p class="container">
 									Systems Engineer specialized in IT project management and internal business communications.<br>
-									Experienced as full stack developer, agile coaching and modern system architectures designs. 
-									As Systems Engineer, I'm trained to study interdisciplinary problems of diverse types
-									and complexity, related to the handling of information within an organization. 
+									Experienced as full stack front to back developer, agile coaching and modern system architectures designs. 
+									As Systems Engineer, I'm trained to study interdisciplinary problems of diverse types and 
+									complexity, related to the handling of information within an organization. 
 								</p>
 								<ul class="fh5co-social-icons">
 									<li>
@@ -202,10 +202,10 @@
 							the available resources, as well as the costs and possible risks, according to 
 							the impact they may represent to the business.
 					</p>
-					<p><a href="/contact" class="btn btn-primary">Contact me</a></p>
+					<p style="align-content: center"><a href="/contact" class="btn btn-primary">Contact me</a></p>
 					<div align="right">
 						<!-- <a style="position:absolute; margin-top:140px" href="/contact" class="btn btn-primary">Contact</a> -->
-						<div id="mojiText" style="margin-top:100px; margin-left:90px; position:absolute;">
+						<div id="mojiText" style="margin-top:90px; margin-left:75px; position:absolute;">
 							<span id="dialog1"></span>
 						</div>
 						<img  id="moji2" class="animated"   height="215" src="images/Bitmojis/bitmoji-20170811100450.png"  alt="Bitmoji Relax">
@@ -551,33 +551,3 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
 </div>
-<script>
-		//Typed
-		var type3 = new Typed('#typed3', {
-			strings: [  "technology", "web development", "finances", "project management", "Angular" ,  "React", "Express", "Game of Thrones", "pizza" ],
-			loop: true,
-  			loopCount: 3,
-			startDelay: 2500,
-			backSpeed: 40,
-			backDelay: 1000,
-  			typeSpeed: 100
-		});
-
-		var type4 = new Typed('#dialog1', {
-			strings: ["Click the button if you wish to contact me!", "Or keep scrolling to see a list of my services", "You can head to the about page to learn more", "Arya Stark dies at the end of season 8", "don't worry Im kidding hehe" ],
-			loop: true,
-  			loopCount: 6,
-			backSpeed: 20,
-			backDelay: 1500,
-  			typeSpeed: 25
-		});
-
-		// Scroll
-		function trajectory () {
-        	EPPZScrollTo.scrollVerticalToElementById('trajectory', 100);
-		}
-		function goToAbout () {
-        	EPPZScrollTo.scrollVerticalToElementById('about-us', 100);
-    	}
-		
-</script>
