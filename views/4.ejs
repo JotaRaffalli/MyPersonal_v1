@@ -1,0 +1,95 @@
+<div class="fh5co-loader"></div>
+<style>
+
+</style>
+<div id="page">
+
+    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" style="background-image:url(images/Love-Flowers-And-Coins-Wallpaper-HD.jpg);">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                            <h1>Feliz 4to Aniversario</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main skills tres columnas  -->
+    <div id="fh5co-services" class="fh5co-bg-section">
+		<div class="container">
+			<div class="row">
+                    <div style="margin-top:-50px;" class="col-md-8 col-md-offset-2 text-center section-heading">
+                            <h2>Para ella</h2>
+                            <h3>Que lo es todo</h3>
+                    </div>
+				<div align="center" style="align-content: center" class="col-md-8 col-md-offset-2 text-center">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<div align="center">
+								<span class="icon3">
+									<img height="70"  src="/images/fonts/like.svg" alt="">
+								</span>
+							</div>
+						<h3 class="firsts-h3"  align="center" >Project Manager</h3>
+						<p>Love to create and manage technological projects. Being responsible of lifting the requiriments of the business, clearly define the objectives for the team, the management of resources, costs and possible risks.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+        <div class="row" style="align-content: center; text-align: center">
+            <div style="padding: 2em">
+                <button class="btn btn-primary " onclick="play()">
+                    Recibir sorpresa
+                </button> 
+            </div>
+           
+            <br> 
+            <div style="padding: 0.75em" class="row">
+                <div class="col-md-4">
+                    <img id="imagen1" height="800" class="animated" style="display:none" src="/images/4años.png" alt="4años">
+                </div>
+                <div style="padding-left: 500px" class="col-md-8 ">
+                    <audio id="myAudio" controls style="display: none" >
+                            <source src="/images/fieldlisa.mp3" type="audio/mpeg">
+                    </audio>
+                    <div style="display:none" class="animated" id="imagen2">
+                        <img  height="150"   src="/images/Stitch-PNG-Photos.png" alt="4años">
+                        Te amo mucho❤
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</div>
+<script>
+    window.addEventListener("load", function(){
+        document.getElementById("myAudio").volume = 0.075   ;
+    });
+
+    function play(){
+       var x = document.getElementById("myAudio");
+       x.play();
+       document.getElementById("myAudio").style.display = "flex";
+        document.getElementById("imagen1").style.display = "block";
+        document.getElementById("imagen2").style.display = "block";
+        $('#imagen1').addClass('fadeInUp');
+        $('#imagen2').addClass('fadeInUp');
+
+
+    }
+    
+
+</script>
+
+

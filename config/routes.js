@@ -74,6 +74,11 @@ module.exports.routes = {
       layout: ''
     }
   },
+  '/4': {
+    view: '4',
+    locals: {
+    }
+  },
 
   'GET /sitemap' : {
     view: '../sitemap',
