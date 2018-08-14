@@ -32,4 +32,15 @@ $(document).ready(function(){
         $('#collage2').addClass('fadeInUp');
     }, { offset: '100%'});
 
+    $("#h1").waypoint(function() {
+        $('#h1').addClass('rotateIn');
+    }, { offset: '100%'});
+
+    $("#h2").waypoint(function() {
+        $('#h2').addClass('fadeIn');
+    }, { offset: '100%'});
+    $("#h5").waypoint(function() {
+        $('#h5').addClass('fadeIn');
+    }, { offset: '100%'});
+
 });
