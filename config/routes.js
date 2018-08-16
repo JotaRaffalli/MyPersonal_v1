@@ -77,6 +77,7 @@ module.exports.routes = {
   '/4': {
     view: '4',
     locals: {
+      title:"Te amo Paula",
     }
   },
 
