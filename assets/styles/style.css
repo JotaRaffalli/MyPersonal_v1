@@ -52,6 +52,10 @@ body {
   .row-bottom-padded-lg {
     padding-bottom: 2em;
   }
+  .contactButton {
+    visibility: hidden !important;
+    display: none !important
+  }
 }
 
 #h2forgreybg {
@@ -64,7 +68,7 @@ body {
 .row-forSections {
     margin-right: 50px;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -78,8 +82,8 @@ body {
 }
 
 .section-heading {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   clear: both;
 }
 .section-heading h2:after {
@@ -87,18 +91,16 @@ body {
   position: absolute;
   display: block;
   width: 70px;
-  height: 2px;
   background: #297cbb;
   left: 50%;
   margin-left: -40px;
   bottom: 0;
 }
 .section-heading h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #555;
   position: relative;
   display: block;
-  padding-bottom: 20px;
   line-height: 1.5;
 }
 
@@ -130,7 +132,6 @@ body {
 #fh5co-project
 {  
   padding-top: 3em;
-  padding-bottom: 5em;
   clear: both; 
 }
 
@@ -535,7 +536,6 @@ h2 {
 }
 
 .about-content {
-  margin-bottom: 4.5em;
   margin-top: 4em;
 }
 .about-content img {
@@ -551,7 +551,7 @@ h2 {
 
 .fh5co-staff {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .fh5co-staff img {
   width: 170px;
@@ -693,10 +693,10 @@ h2 {
 }
 
 #fh5co-project .fh5co-project {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #fh5co-project .fh5co-project2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #fh5co-project .fh5co-project > a {
   display: block;
