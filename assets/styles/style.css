@@ -82,8 +82,8 @@ body {
 }
 
 .section-heading {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   clear: both;
 }
 .section-heading h2:after {
@@ -102,7 +102,7 @@ body {
   color: #555;
   position: relative;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   line-height: 1.5;
 }
 
@@ -519,6 +519,7 @@ h2 {
 #fh5co-testimonial,
 #fh5co-blog,
 #fh5co-contact,
+#fh5co-project,
 #fh5co-footer {
   padding: 7em 0;
   clear: both;
@@ -692,6 +693,147 @@ h2 {
 }
 .feature-center p {
   text-align: justify
+}
+
+.project-grid {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  margin-bottom: 40px;
+}
+.project-grid:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.project-grid .desc {
+  background: rgba(12, 156, 238, 0.9);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: -93px;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.project-grid .desc h3 a {
+  color: white;
+}
+.project-grid .desc span {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-grid .desc {
+    bottom: 0;
+  }
+}
+.project-grid:hover:before, .project-grid:focus:before {
+  opacity: 1;
+}
+.project-grid:hover .desc, .project-grid:focus .desc {
+  bottom: 0;
+}
+
+.project-content {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  padding-bottom: 20px;
+}
+.project-content .col-half {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 480px) {
+  .project-content .col-half {
+    width: 100%;
+  }
+}
+.project-content .col-half .project, .project-content .col-half .project-grid {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.project-content .col-half .project:before, .project-content .col-half .project-grid:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.project-content .col-half .project:hover:before, .project-content .col-half .project:focus:before, .project-content .col-half .project-grid:hover:before, .project-content .col-half .project-grid:focus:before {
+  opacity: 1;
+}
+.project-content .col-half .project:hover .desc, .project-content .col-half .project:focus .desc, .project-content .col-half .project-grid:hover .desc, .project-content .col-half .project-grid:focus .desc {
+  bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .project-content .col-half .project, .project-content .col-half .project-grid {
+    height: 340px !important;
+    margin-bottom: 20px;
+  }
+}
+.project-content .col-half .project {
+  height: 800px;
+}
+.project-content .col-half .project-grid {
+  height: 390px;
+  margin-bottom: 20px;
+}
+.project-content .col-half .project-grid:last-child {
+  margin-bottom: 0;
+}
+.project-content .desc {
+  background: rgba(12, 156, 238, 0.9);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: -93px;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+.project-content .desc h3 {
+  color: white;
+}
+.project-content .desc span {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .project-content .desc {
+    bottom: 0;
+  }
 }
 
 #fh5co-project .fh5co-project {

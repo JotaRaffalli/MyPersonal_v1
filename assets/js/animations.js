@@ -31,6 +31,9 @@ $(document).ready(function(){
     $("#collage2").waypoint(function() {
         $('#collage2').addClass('fadeInUp');
     }, { offset: '100%'});
+    $("#collage3").waypoint(function() {
+        $('#collage3').addClass('fadeInUp');
+    }, { offset: '100%'});
 
     $("#h1").waypoint(function() {
         $('#h1').addClass('rotateIn');
@@ -42,5 +45,23 @@ $(document).ready(function(){
     $("#h5").waypoint(function() {
         $('#h5').addClass('fadeIn');
     }, { offset: '100%'});
+
+     // --------------------------------------------------- Portfolio ---------------------------------------------
+    $('.gallery a').click(function() {
+        var itemID = $(this).attr('href');
+        $('.gallery div').addClass('item_open');
+        $(itemID).addClass('item_open');
+        return false;
+    });
+    $('.close').click(function() {
+        $('.port, .gallery div').removeClass('item_open');
+        return false;
+    });
+
+    $(".gallery a").click(function() {
+        $('html, body').animate({
+            scrollTop: parseInt($("#top").offset().top)
+        }, 400);
+});
 
 });

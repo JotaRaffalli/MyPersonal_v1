@@ -9,14 +9,14 @@
   			typeSpeed: 100
 		});
 
-		var type4 = new Typed('#dialog1', {
+/* 		var type4 = new Typed('#dialog1', {
 			strings: ["Click the button if you wish to contact me!", "Or keep scrolling to see a list of my services", "You can head to the about page to learn more", "Arya Stark dies at the end of season 8", "don't worry Im kidding hehe" ],
 			loop: true,
   			loopCount: 6,
 			backSpeed: 20,
 			backDelay: 1500,
   			typeSpeed: 25
-		});
+		}); */
 
 		// Scroll
 		function trajectory () {
@@ -24,4 +24,7 @@
 		}
 		function goToAbout () {
         	EPPZScrollTo.scrollVerticalToElementById('about-us', 100);
+		}
+		function goToProjects () {
+        	EPPZScrollTo.scrollVerticalToElementById('collage3', 100);
     	}
