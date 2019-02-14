@@ -54,12 +54,12 @@ module.exports.routes = {
     }
   },
 
-  '/services': {
+ /*  '/services': {
     view: 'services/services',
     locals: {
       title:"Jose Raffalli | Services",
     }
-  },
+  }, */
 
   '/skills': {
     view: 'skills',
@@ -81,9 +81,7 @@ module.exports.routes = {
     }
   },
 
-  'GET /sitemap' : {
-    view: '../sitemap',
-  },
+  'GET /sitemap' : 'SitemapController.build_sitemap',
 
   'POST /formSent': 'EmailController.enviarContactForm',
 

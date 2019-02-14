@@ -25,6 +25,7 @@ module.exports = {
         });
         
         generator.start();
+        res.sendfile('sitemap.xml');
     },
 };
 

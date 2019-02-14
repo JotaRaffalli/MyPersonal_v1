@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://raffallijoseluis.com.ve/</loc>
+    <loc>https://www.raffallijoseluis.com.ve/</loc>
   </url>
   <url>
-    <loc>http://raffallijoseluis.com.ve/about</loc>
+    <loc>https://www.raffallijoseluis.com.ve/services</loc>
   </url>
   <url>
-    <loc>http://raffallijoseluis.com.ve/contact</loc>
+    <loc>https://www.raffallijoseluis.com.ve/skills</loc>
+  </url>
+  <url>
+    <loc>https://www.raffallijoseluis.com.ve/contact</loc>
+  </url>
+  <url>
+    <loc>https://www.raffallijoseluis.com.ve/CVs/Clean%20CV%20English.pdf</loc>
+  </url>
+  <url>
+    <loc>https://www.raffallijoseluis.com.ve/about</loc>
   </url>
 </urlset>

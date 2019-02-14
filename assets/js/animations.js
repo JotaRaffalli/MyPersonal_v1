@@ -47,18 +47,19 @@ $(document).ready(function(){
     }, { offset: '100%'});
 
      // --------------------------------------------------- Portfolio ---------------------------------------------
-    $('.gallery a').click(function() {
-        var itemID = $(this).attr('href');
-        $('.gallery div').addClass('item_open');
+    $('.gallery a').click(async function() {
+        var itemID = await $(this).attr('href');
+        $('.gallery #fh5co-project').addClass('item_open');
+        //$('.gallery div:only-child').addClass('item_open');
         $(itemID).addClass('item_open');
         return false;
     });
     $('.close').click(function() {
-        $('.port, .gallery div').removeClass('item_open');
+        $('.port, .gallery div #fh5co-project').removeClass('item_open');
         return false;
     });
 
-    $(".gallery a").click(function() {
+    $(".gallery div a").click(function() {
         $('html, body').animate({
             scrollTop: parseInt($("#top").offset().top)
         }, 400);
