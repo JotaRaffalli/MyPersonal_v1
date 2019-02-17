@@ -1,7 +1,7 @@
 # Personal site v1
 
 <p align="center">
-  <a href="https://www.raffallijoseluis.co.ve">
+  <a href="https://www.raffallijoseluis.com.ve">
     <img
       src="assets/images/Photos/RaffalliJoseluis.png"
       alt="Jose Luis Raffalli"
