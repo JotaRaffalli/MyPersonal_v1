@@ -4,7 +4,7 @@
   <a href="https://www.raffallijoseluis.co.ve">
     <img
       src="assets/images/Photos/RaffalliJoseluis.png"
-      height="300"
+      height="800"
       alt="Jose Luis Raffalli"
       title="Jose Luis"
     />
