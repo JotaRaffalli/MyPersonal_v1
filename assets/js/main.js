@@ -173,7 +173,11 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(window).load(function() {$(".fh5co-loader").fadeOut("slow"); })
+/* 		setTimeout(function(){ 
+			$(".fh5co-loader").fadeOut("slow"); 
+		}, 1000); */
+		
 	};
 
 	var counter = function() {
@@ -204,8 +208,8 @@
 		contentWayPoint();
 		dropdown();
 		goToTop();
-		loaderPage();
 		counterWayPoint();
+		loaderPage();
 	});
 
 

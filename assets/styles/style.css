@@ -728,7 +728,7 @@ h2 {
   -o-transition: 0.1s;
   transition: 0.1s;
 }
-.project-grid .desc h3 a {
+.project-grid .desc h3 {
   color: white;
 }
 .project-grid .desc span {
