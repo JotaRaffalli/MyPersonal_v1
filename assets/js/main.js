@@ -173,10 +173,10 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(window).load(function() {$(".fh5co-loader").fadeOut("slow"); })
-/* 		setTimeout(function(){ 
+
+		setTimeout(function(){ 
 			$(".fh5co-loader").fadeOut("slow"); 
-		}, 1000); */
+		}, 500);
 		
 	};
 

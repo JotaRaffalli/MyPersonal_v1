@@ -61,12 +61,12 @@ module.exports.routes = {
     }
   }, */
 
-  '/skills': {
+ /*  '/skills': {
     view: 'skills',
     locals: {
       title:"Jose Raffalli | Skills",
     }
-  },
+  }, */
 
   '/3': {
     view: '3',
