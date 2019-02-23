@@ -3,6 +3,9 @@ $(document).ready(function(){
     $("#aboutBrief").waypoint(function() {
         $('#aboutBrief').addClass('fadeInLeft');
     }, { offset: '100%'});
+    $("#aboutBrief2").waypoint(function() {
+        $('#aboutBrief2').addClass('fadeInRight');
+    }, { offset: '100%'});
      $("#aboutBriefImg").waypoint(function() {
         $('#aboutBriefImg').addClass('bounceInRight');
     }, { offset: '100%'});

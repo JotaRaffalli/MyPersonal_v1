@@ -1,5 +1,16 @@
 <div class="fh5co-loader"></div>
-
+<script>
+   window.addEventListener('load', function () {
+    var type4 = new Typed('#dialog1', {
+			strings: ["Click the button if you wish to contact me!", "Or keep scrolling know me better", "You can check all my Projects at GitHub", "Arya Stark dies at the end of season 8!", "don't worry Im kidding hehe" ],
+			loop: true,
+  			loopCount: 6,
+			backSpeed: 20,
+			backDelay: 1500,
+  			typeSpeed: 25
+		});
+}, false);
+</script>
 <div id="page">
 <nav class="fh5co-nav" role="navigation">
     <div class="container">
@@ -39,8 +50,8 @@
             <div class="col-md-8 col-md-offset-2 text-center">
                 <div class="display-t">
                     <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                        <h1>About me</h1> 
-                        <h2>Scroll down to learn more</h2>                       
+                        <h1 class="animated slideInRight">About me</h1> 
+                        <h2 class="animated slideInLeft">Scroll down to learn more</h2>                       
                     </div>
                 </div>
             </div>
@@ -90,7 +101,7 @@
 </div>
 
     <!-- About 2 -->
-    <div class="container">
+    <div style="margin-top:4em" class="container">
 			<div class="row" id="about-us">
 				<div style="margin-left: 5px; margin-right: 5px" class="row">
 				<div align="center" id="aboutBriefImg2"  class="col-sm-6 animated">
@@ -168,30 +179,18 @@
 		</div>
     </div>
         
-    <section>
-            <div class="container animated" id="featurette-1">
-                <div class="row featurette  animate-box">
-                    <div style="margin-left: 10px; margin-right: 10px" class="row">
-                            <div class="col-md-6">
-                                <img height="370" src="images/IMG_2829.JPG" alt="German Beer">
-                            </div>
-                            <div class="col-md-6">
-                                    <h2 class="featurette-heading-forSections" id="h2forgreybg"> <span class="text-muted">Planificar y llevar a cabo.</span></h2>
-                                    <p class="lead">Me gusta formar proyectos, diseñar planes y gestionarlos para poder llevarlos a cabo de la manera más profesional posible.</p>
-                            </div>
-                    </div>
-                </div>
-            </div>	
-    </section>	
+ 	
 
-   
 <!-- Youtube -->
 <section>
 <div class="container-fluid">
     <div class="row">
             <div style="padding-bottom:1em" class="col-md-12 section-heading text-center">
-                    <h2>Entrevistas</h2>
-                    <h3>Proyecto Aero espacial</h3>
+                    <h2>Interviews</h2>
+                    <h3>Aerospace Drone Project</h3>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
             </div>
     </div>
 </div>
@@ -216,3 +215,5 @@
     </div>
 </div>
 </div>
+
+
